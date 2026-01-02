@@ -7,77 +7,82 @@
   <meta name="description" content="Venture Velo builds internal AI systems and analytics tools that remove manual work for operators." />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      max-width: 960px;
-      margin: 60px auto;
-      padding: 0 24px;
-      line-height: 1.6;
-      color: #111;
-    }
-    h1 { font-size: 2.6rem; margin-bottom: 0.4rem; }
-    h2 { margin-top: 3rem; }
-    .tagline { color: #555; font-size: 1.1rem; }
-    .btn {
-      display: inline-block;
-      margin-right: 12px;
-      padding: 10px 18px;
-      border: 1px solid #111;
-      border-radius: 6px;
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
-    }
-    .stats, .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-      margin-top: 20px;
-    }
-    .card {
-      border: 1px solid #e4e4e4;
-      border-radius: 10px;
-      padding: 18px;
-    }
-    footer {
-      margin: 80px 0 40px;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    .hero {
-      background: linear-gradient(135deg, #6a11cb, #8e2de2);
-      color: white;
-      padding: 80px 24px 70px;
-      text-align: center;
-      border-radius: 0 0 24px 24px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.18);
-    }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #111;
+  }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      letter-spacing: 0.5px;
-    }
+  /* Full-width hero */
+  .hero {
+    background: linear-gradient(135deg, #6a11cb, #8e2de2);
+    color: white;
+    padding: 80px 24px 70px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+  }
 
-    .hero p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-    }
-  </style>
+  .hero h1 {
+    font-size: 3rem;
+    margin: 0 0 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    opacity: 0.92;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  /* Centered content container below hero */
+  .page {
+    max-width: 960px;
+    margin: 60px auto;
+    padding: 0 24px;
+  }
+
+  h2 { margin-top: 3rem; }
+  .tagline { color: #555; font-size: 1.1rem; }
+
+  .btn {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 10px 18px;
+    border: 1px solid #111;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+  }
+
+  .stats, .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+  }
+
+  .card {
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    padding: 18px;
+  }
+
+  footer {
+    margin: 80px 0 40px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+</style>
 </head>
 <body>
   <header class="hero">
     <h1>Venture Velo</h1>
     <p>AI systems that remove manual work for operators</p>
   </header>
-
+  <div class="page">
   <h1>Venture Velo</h1>
   <p class="tagline">AI systems that remove manual work for operators. Built with measurable ROI.</p>
 
@@ -151,6 +156,7 @@
   <footer>
     © 2026 Venture Velo
   </footer>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
