@@ -186,24 +186,30 @@
   align-items: center;
 }
 
-.tools-group img{
-  height: 78px;
-  width: auto;
-  margin: 0 51px;
-  opacity: 0.78;
-  transition: filter 160ms ease, opacity 160ms ease, transform 160ms ease;
+.tool-logo{
+  width: 160px;              /* same visual width for every logo */
+  height: 90px;              /* same visual height for every logo */
+  margin: 0 36px;            /* spacing between logos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.tools-group img:hover{
-  filter: none;
+.tool-logo img{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.78;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.tool-logo img:hover{
   opacity: 1;
   transform: translateY(-1px);
 }
 
-/* Pause on hover */
-.tools-carousel:hover .tools-track{
-  animation-play-state: paused;
-}
 
 @keyframes toolsScroll{
   from { transform: translateX(0); }
@@ -338,22 +344,21 @@
 <div class="tools-carousel" aria-label="Tools used by Venture Velo">
   <div class="tools-track">
     <div class="tools-group">
-      <img src="assets/tools/pytorch.png" alt="PyTorch">
-      <img src="assets/tools/voiceflow.png" alt="Voiceflow">
-      <img src="assets/tools/openai.png" alt="OpenAI">
-      <img src="assets/tools/react.jpg" alt="react">
-      <img src="assets/tools/aws.png" alt="aws">
-      <img src="assets/tools/mongodb.png" alt="mongodb">
+      <div class="tool-logo"><img src="assets/tools/pytorch.png" alt="PyTorch"></div>
+      <div class="tool-logo"><img src="assets/tools/voiceflow.png" alt="Voiceflow"></div>
+      <div class="tool-logo"><img src="assets/tools/openai.png" alt="OpenAI"></div>
+      <div class="tool-logo"><img src="assets/tools/react.jpg" alt="React"></div>
+      <div class="tool-logo"><img src="assets/tools/aws.png" alt="AWS"></div>
+      <div class="tool-logo"><img src="assets/tools/mongodb.png" alt="MongoDB"></div>
     </div>
 
-    <!-- Duplicate group for seamless loop -->
     <div class="tools-group" aria-hidden="true">
-      <img src="assets/tools/pytorch.png" alt="">
-      <img src="assets/tools/voiceflow.png" alt="">
-      <img src="assets/tools/openai.png" alt="">
-      <img src="assets/tools/react.jpg" alt="react">
-      <img src="assets/tools/aws.png" alt="aws">
-      <img src="assets/tools/mongodb.png" alt="mongodb">
+      <div class="tool-logo"><img src="assets/tools/pytorch.png" alt=""></div>
+      <div class="tool-logo"><img src="assets/tools/voiceflow.png" alt=""></div>
+      <div class="tool-logo"><img src="assets/tools/openai.png" alt=""></div>
+      <div class="tool-logo"><img src="assets/tools/react.jpg" alt=""></div>
+      <div class="tool-logo"><img src="assets/tools/aws.png" alt=""></div>
+      <div class="tool-logo"><img src="assets/tools/mongodb.png" alt=""></div>
     </div>
   </div>
 </div>
