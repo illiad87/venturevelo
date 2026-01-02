@@ -214,6 +214,18 @@
 @media (prefers-reduced-motion: reduce){
   .tools-track{ animation: none; }
 }
+
+.social-link img{
+  width: 32px;
+  height: 32px;
+  opacity: 0.85;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.social-link img:hover{
+  opacity: 1;
+  transform: translateY(-1px);
+}
 </style>
 </head>
 <body>
@@ -357,7 +369,12 @@
 
   <h2 id="contact">Contact</h2>
   <p>
-    <a href="https://www.linkedin.com/company/venturevelo/about/">LinkedIn</a>
+    <a href="https://www.linkedin.com/company/venturevelo/about/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="social-link">
+      <img src="assets/icons/linkedin.svg" alt="Venture Velo on LinkedIn">
+    </a>
   </p>
 
   <footer>
