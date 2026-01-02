@@ -75,6 +75,43 @@
     font-size: 0.9rem;
     color: #666;
   }
+  /* --- Animations --- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Hero comes in first */
+.hero {
+  animation: fadeUp 700ms ease-out both;
+}
+
+/* Content comes in slightly after */
+.page {
+  animation: fadeIn 700ms ease-out both;
+  animation-delay: 180ms;
+}
+
+/* Respect reduced-motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .hero, .page {
+    animation: none !important;
+  }
+}
+.hero h1 {
+  animation: fadeUp 700ms ease-out both;
+  animation-delay: 80ms;
+}
+
+.hero p {
+  animation: fadeUp 700ms ease-out both;
+  animation-delay: 160ms;
+}
 </style>
 </head>
 <body>
