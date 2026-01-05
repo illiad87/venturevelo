@@ -236,19 +236,28 @@
   .tools-track{ animation: none; }
 }
 
-.social-link img{
-  width: 36px;
-  height: 36px;
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link img {
+  width: 42px;
+  height: 42px;
   object-fit: contain;
   display: block;
   opacity: 0.85;
   transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
-
-.social-link img:hover{
+.social-link img:hover {
   opacity: 1;
   transform: translateY(-2px);
+}
+
+.accordion-button {
+  font-weight: 600;
 }
 
 </style>
@@ -432,20 +441,20 @@
 </div>
 
   <h2 id="contact">Contact</h2>
-  <p>
+  <p style="display:flex; gap:18px; align-items:center;">
     <a href="https://www.linkedin.com/company/venturevelo/about/" 
-      target="_blank" 
+      target="_blank"
       rel="noopener noreferrer"
       class="social-link">
-      <img style="margin-top:8px" src="assets/icons/linkedin.png" alt="Venture Velo on LinkedIn">
+      <img src="assets/icons/linkedin.png" alt="Venture Velo on LinkedIn">
     </a>
 
     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=venturevelo3@gmail.com"
-     target="_blank"
-     rel="noopener noreferrer"
-     class="social-link">
-    <img src="assets/icons/gmail.jpg" alt="Email Venture Velo">
-  </a>
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-link">
+      <img src="assets/icons/gmail.jpg" alt="Email Venture Velo">
+    </a>
   </p>
   <footer>
     © 2026 Venture Velo
