@@ -50,7 +50,7 @@
   h2 { margin-top: 3rem; }
   .tagline { color: #555; font-size: 1.1rem; }
 
-  .btn {
+  .vv-btn {
     display: inline-block;
     margin-right: 12px;
     padding: 10px 18px;
@@ -247,36 +247,6 @@
   opacity: 1;
   transform: translateY(-1px);
 }
-
-#howWeWorkAccordion {
-  margin-top: 24px;
-}
-
-#howWeWorkAccordion .accordion-item {
-  border: none;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-#howWeWorkAccordion .accordion-button {
-  padding: 14px 6px;
-  font-weight: 500;
-  background: transparent;
-}
-
-#howWeWorkAccordion .accordion-button:not(.collapsed) {
-  background: transparent;
-  box-shadow: none;
-  color: #111;
-}
-
-#howWeWorkAccordion .accordion-body {
-  padding: 6px 6px 16px;
-  color: #555;
-}
-
-#howWeWorkAccordion .accordion-button::after {
-  display: none;
-}
 </style>
 </head>
 <body>
@@ -285,16 +255,6 @@
     <p>AI systems that remove manual work for operators. Built with measurable ROI.</p>
   </header>
   <div class="page">
-  <!-- <p>
-    <a class="btn" href="#cases">View Case Studies</a>
-    <a class="btn" href="#contact">Contact</a>
-  </p> -->
-
-  <!-- <div class="stats">
-    <div class="card">Enterprise projects delivered across aviation, EV, insurance, and consumer sectors</div>
-    <div class="card">Clients include Honda, Toyota, Yeti Airlines, Ather Energy Nepal, Shikhar Insurance</div>
-    <div class="card">Built internal AI assistants, automation workflows, and KPI analytics tools</div>
-  </div> -->
 
   <h2>Who We've Worked With</h2>
 
@@ -428,54 +388,52 @@
 
 
 
-  <h2>How We Work</h2>
+<h2>How We Work</h2>
 
 <div class="accordion" id="howWeWorkAccordion">
-
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse"
-        data-bs-target="#step1" aria-expanded="true">
-        1. Diagnose the bottleneck
+      <button class="accordion-button" type="button"
+        data-bs-toggle="collapse" data-bs-target="#work1" aria-expanded="true">
+        Diagnose the operational bottleneck
       </button>
     </h2>
-    <div id="step1" class="accordion-collapse collapse show" data-bs-parent="#howWeWorkAccordion">
+    <div id="work1" class="accordion-collapse collapse show" data-bs-parent="#howWeWorkAccordion">
       <div class="accordion-body">
-        We start by mapping the operational flow and identifying the exact friction
-        points that block efficiency or growth.
+        We map the full operational workflow and identify friction points blocking performance.
       </div>
     </div>
   </div>
 
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#step2">
-        2. Ship a working demo
+      <button class="accordion-button collapsed" type="button"
+        data-bs-toggle="collapse" data-bs-target="#work2">
+        Ship a working demo fast
       </button>
     </h2>
-    <div id="step2" class="accordion-collapse collapse" data-bs-parent="#howWeWorkAccordion">
+    <div id="work2" class="accordion-collapse collapse" data-bs-parent="#howWeWorkAccordion">
       <div class="accordion-body">
-        Instead of slide decks, we deliver a functional prototype that stakeholders
-        can test inside real workflows.
+        We deliver functional prototypes instead of slide decks.
       </div>
     </div>
   </div>
 
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#step3">
-        3. Deploy and iterate
+      <button class="accordion-button collapsed" type="button"
+        data-bs-toggle="collapse" data-bs-target="#work3">
+        Iterate and deploy into production
       </button>
     </h2>
-    <div id="step3" class="accordion-collapse collapse" data-bs-parent="#howWeWorkAccordion">
+    <div id="work3" class="accordion-collapse collapse" data-bs-parent="#howWeWorkAccordion">
       <div class="accordion-body">
-        We refine based on real usage data and deploy into production systems,
-        ensuring measurable ROI.
+        We refine based on real usage data and deploy into real workflows.
       </div>
     </div>
   </div>
+</div>
+
 
 </div>
 
@@ -486,7 +444,7 @@
       target="_blank" 
       rel="noopener noreferrer"
       class="social-link">
-      <img src="assets/icons/linkedin.png" alt="Venture Velo on LinkedIn">
+      <img style="margin-top:8px" src="assets/icons/linkedin.png" alt="Venture Velo on LinkedIn">
     </a>
   </p>
   <footer>
