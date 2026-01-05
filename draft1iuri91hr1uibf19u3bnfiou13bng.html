@@ -260,6 +260,23 @@
   font-weight: 600;
 }
 
+.case-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.case-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.case-card .card-body {
+  padding: 18px;
+}
+
+
 </style>
 </head>
 <body>
@@ -339,34 +356,48 @@
   <h2 id="cases">Case Studies</h2>
 
   <div class="grid">
-    <div class="card">
-      <strong>Toyota — Sales Prioritization Model</strong>
-      <p><b>Problem:</b> Sales team experienced an overload of customers asking basic questions about car models.</p>
-      <p><b>Approach:</b> Trained a Neural Netwrok on 5000+ previous customers' data to predict outcomes of future clients.</p>
-      <p><b>Impact:</b> Developed an analytical approach for prioritizing clients. Provided critical customer insight to sales staff.</p>
+    <div class="card case-card">
+      <img src="assets/cases/toyota.jpg" alt="Toyota case study">
+      <div class="card-body">
+        <strong>Toyota — Sales Prioritization Model</strong>
+        <p><b>Problem:</b> Sales team experienced an overload of customers asking basic questions about car models.</p>
+        <p><b>Approach:</b> Trained a neural network on 5,000+ customer records to predict sales outcomes.</p>
+        <p><b>Impact:</b> Enabled prioritization of high-value prospects and improved conversion efficiency.</p>
+      </div>
     </div>
 
-    <div class="card">
-      <strong>Yeti Airlines — Ticket Purchasing Automation</strong>
-      <p><b>Problem:</b> High booking friction and manual workload in customer ticketing operations.</p>
-      <p><b>Approach:</b> Designed AI-driven booking chatbot and structured commission-based deployment model.</p>
-      <p><b>Impact:</b> Demonstrated automation feasibility for high-volume ticket flows.</p>
+    <div class="card case-card">
+      <img src="assets/cases/yeti.jpg" alt="Yeti Airlines case study">
+      <div class="card-body">
+        <strong>Yeti Airlines — Ticket Purchasing Automation</strong>
+        <p><b>Problem:</b> High booking friction and manual workload in customer ticketing operations.</p>
+        <p><b>Approach:</b> Designed an AI-driven booking chatbot with a commission-based deployment model.</p>
+        <p><b>Impact:</b> Demonstrated automation feasibility for high-volume ticket flows.</p>
+      </div>
     </div>
 
-    <div class="card">
-      <strong>Ather Energy Nepal — Sales Enablement Assistant</strong>
-      <p><b>Problem:</b> Sales teams struggled to navigate 48 fragmented SOPs and process documents.</p>
-      <p><b>Approach:</b> Built an internal AI knowledge-base chatbot trained on verified internal documentation.</p>
-      <p><b>Impact:</b> Reduced onboarding friction and enabled faster, more accurate field responses.</p>
+    <div class="card case-card">
+      <img src="assets/cases/ather.jpg" alt="Ather Energy Nepal case study">
+      <div class="card-body">
+        <strong>Ather Energy Nepal — Sales Enablement Assistant</strong>
+        <p><b>Problem:</b> Sales teams struggled to navigate 48 fragmented SOPs and process documents.</p>
+        <p><b>Approach:</b> Built an internal AI knowledge-base chatbot trained on verified documentation.</p>
+        <p><b>Impact:</b> Reduced onboarding friction and improved field-level response accuracy.</p>
+      </div>
     </div>
 
-    <div class="card">
-      <strong>Shikhar Insurance — Insurance Calculation Chatbot</strong>
-      <p><b>Problem:</b> High-volume requests for insurance quote previews took up significant time from sales staff.</p>
-      <p><b>Approach:</b> Created a chatbot which simplifies insurance calculation process through abstraction.</p>
-      <p><b>Impact:</b> Automated a significant aspect of sales workflow, saving time and improving customer experience.</p>
+    <div class="card case-card">
+      <img src="assets/cases/shikhar.jpg" alt="Shikhar Insurance case study">
+      <div class="card-body">
+        <strong>Shikhar Insurance — Insurance Calculation Chatbot</strong>
+        <p><b>Problem:</b> Quote previews consumed a large portion of sales time.</p>
+        <p><b>Approach:</b> Built a chatbot that abstracts complex pricing rules into a conversational flow.</p>
+        <p><b>Impact:</b> Automated insurance calculations and improved customer response speed.</p>
+      </div>
     </div>
+
   </div>
+
 
 <h2>Our Stack</h2>
 
@@ -394,7 +425,7 @@
 
 
 
-<h2 style="margin-bottom: 12px;">How We Work</h2>
+<h2 style="margin-bottom: 20x;">How We Work</h2>
 
 <div class="accordion" id="howWeWorkAccordion">
   <div class="accordion-item">
