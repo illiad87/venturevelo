@@ -116,6 +116,11 @@
   animation: fadeUp 700ms ease-out both;
   animation-delay: 160ms;
 }
+
+#clientCarousel {
+  margin-top: 32px;
+}
+
 /* Logo carousel (fixed height, centered) */
 .client-carousel {
   margin-top: 14px;
@@ -261,7 +266,8 @@
     <div class="card">Built internal AI assistants, automation workflows, and KPI analytics tools</div>
   </div> -->
 
-  <h2>Previous Clients</h2>
+  <h2>Who we've worked with</h2>
+
 
 
 <div id="clientCarousel" class="carousel slide client-carousel" data-bs-ride="carousel" data-bs-interval="2500">
@@ -388,11 +394,56 @@
 
 
   <h2>How We Work</h2>
-  <ol>
-    <li>Diagnose the operational bottleneck</li>
-    <li>Ship a working demo fast</li>
-    <li>Iterate with stakeholders and deploy into real workflows</li>
-  </ol>
+
+<div class="accordion" id="howWeWorkAccordion">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+        data-bs-target="#step1" aria-expanded="true">
+        1. Diagnose the bottleneck
+      </button>
+    </h2>
+    <div id="step1" class="accordion-collapse collapse show" data-bs-parent="#howWeWorkAccordion">
+      <div class="accordion-body">
+        We start by mapping the operational flow and identifying the exact friction
+        points that block efficiency or growth.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#step2">
+        2. Ship a working demo
+      </button>
+    </h2>
+    <div id="step2" class="accordion-collapse collapse" data-bs-parent="#howWeWorkAccordion">
+      <div class="accordion-body">
+        Instead of slide decks, we deliver a functional prototype that stakeholders
+        can test inside real workflows.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#step3">
+        3. Deploy and iterate
+      </button>
+    </h2>
+    <div id="step3" class="accordion-collapse collapse" data-bs-parent="#howWeWorkAccordion">
+      <div class="accordion-body">
+        We refine based on real usage data and deploy into production systems,
+        ensuring measurable ROI.
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
   <h2 id="contact">Contact</h2>
   <p>
